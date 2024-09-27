@@ -27,24 +27,22 @@ Develop a simple authentication system that allows users to create an account an
 
 ### **Backend (Express.js):**
 
-- **Route for user registration**  
+- **Route for user registration**
   - Endpoint: `POST /api/register`
   - Fields: Username, email address, and password.
   - The password must be hashed before being stored in the database.
   - Handle errors (e.g., user already exists, data validation, etc.).
-  
-- **Route for user login**  
+- **Route for user login**
   - Endpoint: `POST /api/login`
   - Fields: Email and password.
   - After successful login, generate a JWT token to be used for future authenticated requests.
 
 ### **Frontend (React.js):**
 
-- **Registration page**  
+- **Registration page**
   - Create a form with validation for user registration (username, email, password).
   - After successful registration, redirect to the login page.
-  
-- **Login page**  
+- **Login page**
   - Create a login form where users can sign in with their email and password.
 
 ---
@@ -65,36 +63,44 @@ The following steps provide a roadmap for completing the task. For certain steps
 
 ### **Backend:**
 
-1. **Install Husky, Prettier, and ESLint:**  
+1. **Install Husky, Prettier, and ESLint:**
+
    - **Deliverable:** No deliverable needed. Integrate directly into the project.
 
-2. **Configure TypeORM with SQLite:**  
+2. **Configure TypeORM with SQLite:**
+
    - **Deliverable:** Submit a PR with the link showing the integration.
 
-3. **Implement the registration endpoint:**  
+3. **Implement the registration endpoint:**
+
    - **Deliverable:** Submit a PR with the link showing the implementation.
 
-4. **Implement the login endpoint:**  
+4. **Implement the login endpoint:**
    - **Deliverable:** Submit a PR with the link showing the implementation.
 
 ### **Frontend:**
 
-1. **Install Husky, Prettier, and ESLint:**  
+1. **Install Husky, Prettier, and ESLint:**
+
    - **Deliverable:** No deliverable needed. Integrate directly into the project.
 
-2. **Install and configure Storybook:**  
+2. **Install and configure Storybook:**
+
    - **Deliverable:** No deliverable needed. Integrate directly into the project.
 
-3. **Install and configure Chakra-UI:**  
+3. **Install and configure Chakra-UI:**
+
    - **Deliverable:** No deliverable needed. Integrate directly into the project.
 
-4. **Implement design system elements:**  
+4. **Implement design system elements:**
+
    - **Deliverable:** Submit a PR with a demo video showing the result.
 
-5. **Create the registration page:**  
+5. **Create the registration page:**
+
    - **Deliverable:** Submit a PR with a demo video showing the result.
 
-6. **Create the login page:**  
+6. **Create the login page:**
    - **Deliverable:** Submit a PR with a demo video showing the result.
 
 ---
