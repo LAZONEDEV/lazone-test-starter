@@ -1,12 +1,13 @@
-import express, { Request, Response } from "express";
+import dotenv from "dotenv";
+import "reflect-metadata";
+import App from "./app";
+import validateEnv from "./utils/validateEnv";
+import AuthController from "./resources/auth/auth.controller";
 
-const app = express();
-const port = process.env.PORT || 4000;
+dotenv.config();
 
-app.get("/", (req: Request, res: Response) => {
-  res.send("Hello, TypeScript with Express!");
-});
+validateEnv();
 
-app.listen(port, () => {
-  console.log(`Server is running on port ${port}`);
-});
+const app = new App([new AuthController()], Number(process.env.PORT));
+console.log("PORT:", process.env.PORT);
+app.listen();
