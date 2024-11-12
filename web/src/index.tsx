@@ -10,6 +10,6 @@ if (rootElement) {
   root.render(
     <StrictMode>
       <App name="World" />
-    </StrictMode>
+    </StrictMode>,
   );
 }
